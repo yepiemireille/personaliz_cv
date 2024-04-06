@@ -1,0 +1,57 @@
+{
+    "took": 5,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": 85,
+        "max_score": 1.0,
+        "hits": [
+            {
+                "_index": "ocb_index_telin",
+                "_type": "data",
+                "_id": "AYQL4273ZYXnMz8k4ABs",
+                "_score": 1.0,
+                "_source": {
+                    "Daloa-Salle Auto": "ES",
+                    "date": "20221024",
+                    "heure": "21:26",
+                    "Daloa-Salle Voisine": "ES",
+                    "Gagnoa": "ES",
+                    "Vavoua": "ES",
+                    "Issia": "ES",
+                    "Lakota": "ES",
+                    "Divo": "ES",
+                    "Gagnoa-Radio": "ES",
+                    "Seguela": "ES",
+                    "Mankono": "ES",
+                    "Kani": "ES",
+                    "Oume": "ES",
+                    "Zuenoula": "ES",
+                    "Bouafle": "ES",
+                    "Hire": "ES",
+                    "Sinfra": "ES",
+                    "YAKRO-Centre-ville": "ES",
+                    "YAKRO-Assabou": "ES",
+                    "YAKRO-N'zuessy": "ES",
+                    "YAKRO-Kokrenou": "ES",
+                    "Duekoue": "ES",
+                    "Guiglo": "ES",
+                    "Man-Salle Auto-1": "ES",
+                    "Man-Salle Auto-2": "ES",
+                    "Touba": "ES",
+                    "Odienne": "ES",
+                    "San-Pedro-Auto": "ES",
+                    "San-Pedro-Bardot": "ES",
+                    "Soubre": "ES",
+                    "Meadji": "ES",
+                    "Sassandra": "ES"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,89 @@
+[
+    {
+        "id": 1,
+        "poste":"Stagiaire DataViz",
+        "entreprise": "Orange CI",
+        "date_debut": "20/02/2023",
+        "date_fin":"19/02/2024",
+        "projets": [
+            {
+                "name_projet": "réquisition",
+                "objectif": "consiste à fournir les données des abonné(e)s tels que: cdr, pièce d'identité, IMEI, OM, E- recharge",
+                "tache_effec": ["Implémentation des maquettes", "Intégration des APIS"],
+                "technologies": ["Angular", "GitLab"]
+            },
+            {
+                "name_projet": "supervision",
+                "objectif": "permettre à l'équipe BI/Big Data d'avoir une vue d'ensemble sur leur environnement",
+                "tache_effec": ["Implémentation des maquettes", "Intégration des APIS"],
+                "technologies": ["Angular", "GitLab"]
+            },
+            {
+                "name_projet": "Netfeeling",
+                "objectif": "permet de traquer les postes sur faceBook concernant Orange CI",
+                "tache_effec": ["Implémentation des maquettes", "Intégration des APIS"],
+                "technologies": ["Angular", "GitLab"]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "poste":"DataViz",
+        "entreprise": "Orange CI",
+        "date_debut": "21/03/2024",
+        "date_fin":"Encours",
+        "projets": [
+            {
+                "name_projet": "Netfeeling",
+                "objectif": "permet de",
+                "tache_effec": ["Implémentation des maquettes", "Intégration des APIS"],
+                "technologies": ["Angular", "GitLab"]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "poste":"Parking 3",
+        "entreprise": "AIRPORT",
+        "date_debut": "ORLY",
+        "date_fin":"",
+        "projets": [
+            {
+                "name_projet": "Parking",
+                "objectif": "permet de",
+                "tache_effec": ["Implémentation des maquettes", "Intégration des APIS"],
+                "technologies": ["Angular", "GitLab"]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "poste":"Parking 4",
+        "entreprise": "AIRPORT",
+        "date_debut": "NICE",
+        "date_fin":"",
+        "projets": [
+            {
+                "name_projet": "Parking",
+                "objectif": "permet de traquer les postes sur faceBook concernant Orange CI",
+                "tache_effec": ["Implémentation des maquettes", "Intégration des APIS"],
+                "technologies": ["Angular", "GitLab"]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "poste":"Parking 5",
+        "entreprise": "AIRPORT",
+        "date_debut": "LILLE",
+        "date_fin":"",
+        "projets": [
+            {
+                "name_projet": "Parking",
+                "objectif": "permet de traquer les postes sur faceBook concernant Orange CI",
+                "tache_effec": ["Implémentation des maquettes", "Intégration des APIS"],
+                "technologies": ["Angular", "GitLab"]
+            }
+        ]
+    }
+]

@@ -1,0 +1,62 @@
+
+.container-fluid{
+    background-color: rgb(14, 158, 158);
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    // color: rgb(21, 69, 69);
+    //  .block-cv-experience .block-adress
+}
+
+.block-img{
+    display: flex;
+    background-image: url("../../assets/images/8451.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+
+.block-img img{
+    width: 200px;
+}
+
+.block-img p{
+    margin: auto;
+    font-weight: bold;
+}
+// .block-img p::first{
+//     color: red;
+// } 
+
+.block-img-p{
+    padding-top: 65px;
+    padding-left: 25px;
+}
+
+.block-about, .block-adress{
+    padding: 30px;
+}
+
+.block-adress-location, .block-adress-email, .block-adress-number{
+    display: flex;
+}
+
+.block-about-title{
+    display: flex;
+}
+
+.blocks{
+    color: white;
+    background-color: rgba(88, 213, 213, 0.57);
+    margin: 25px;
+    border-radius: 10px;
+}
+
+.block-kills h3, .block-specialities h3{
+    padding: 30px;
+    // margin: 32px;
+}
+

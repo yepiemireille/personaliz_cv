@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "type_formation":"Licence",
+        "date_formation": "2019",
+        "etablissement_formation": "UVCI"
+    },
+    {
+        "id": 2,
+        "type_formation":"Master",
+        "date_formation": "2022",
+        "etablissement_formation": "UVCI"
+    },
+    {
+        "id": 3,
+        "type_formation":"Doctorat",
+        "date_formation": "Encours",
+        "etablissement_formation": "UVCI"
+    }
+]
