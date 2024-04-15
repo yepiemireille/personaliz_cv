@@ -1,0 +1,43 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.block-competence-header{
+    background-color: rgb(14, 158, 158);
+    height: 205px;
+}
+
+.card-header-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-competence-header p{
+    color: white;
+    padding-top: 70px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    padding: 12px 3px;
+}
+
+.block-label-right{
+    margin-left: 45px;
+}
+
+.block-table-list{
+    margin-top: 35px;
+    border-radius: 5px;
+}
+
+
+

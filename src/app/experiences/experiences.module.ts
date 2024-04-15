@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import {DropdownModule} from 'primeng/dropdown';
 import { TableModule } from 'primeng/table';
+import { ButtonModule } from 'primeng/button';
+import { DialogModule } from 'primeng/dialog';
+import { DynamicDialogModule } from 'primeng/dynamicdialog';
+import { CardModule } from 'primeng/card';
+import { InputTextModule } from 'primeng/inputtext';
 
 import { ExperiencesRoutingModule } from './experiences-routing.module';
 import { ExperiencesComponent } from './experiences.component';
@@ -20,10 +24,14 @@ import { AddExperienceComponent } from './add-experience/add-experience.componen
   ],
   imports: [
     CommonModule,
-    DropdownModule,
     FormsModule,
     ExperiencesRoutingModule,
-    TableModule
+    TableModule,
+    ButtonModule,
+    DialogModule,
+    CardModule,
+    InputTextModule,
+    DynamicDialogModule
     
   ]
 })

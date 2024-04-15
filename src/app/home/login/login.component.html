@@ -1,1 +1,29 @@
-<p>login works!</p>
+<div class="block-form-login">
+    <h4>Formulaire de connexion</h4> 
+    <div class="row">
+        <div class="col-12 form-card">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="form-card-input">
+                    <div>
+                        <label for="login">Login:</label>
+                        <input type="text" formControlName="login" placeholder="Entrez un login">
+                    </div>
+                    <!-- <div *ngIf="loginForm.get('login')?.invalid && loginForm.get('login')?.touched">
+                        <div *ngIf="loginForm.get('login')?.errors?.['required']">Login is required.</div>
+                        <div *ngIf="loginForm.get('login')?.errors?.['login']">Invalid login format.</div>
+                    </div> -->
+                    <div>
+                        <label for="email">Password:</label>
+                        <input type="password" formControlName="password" placeholder="Entrez un mot de passe">
+                    </div>
+                    <!-- <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+                        <div *ngIf="loginForm.get('password')?.errors?.['required']">Password is required.</div>
+                    </div> -->
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-info" [disabled]="loginForm.invalid">Connexion</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

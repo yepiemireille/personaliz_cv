@@ -1,1 +1,161 @@
-<p>list-competence works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="block-competence-header">
+                <p>Liste des competences</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="block-table-list col-10"> 
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-12">
+                           <div class="card-header card-header-title">
+                                <div>
+                                    <!-- <p-button (click)="show()" [loading]="loading" label="Add"></p-button> -->
+                                    <!-- <p-button (click)="cancel()" label="Retour"></p-button> -->
+                                </div>
+                                 <div>
+                                    <p-button [loading]="" label="Add d'competence"></p-button>
+                                    <p-dialog header="Ajout d'competence" [modal]="true" [style]="{ width: '80vw' }" [draggable]="false" [resizable]="false">
+                                        <div class="card flex justify-content-center">
+                                            <p-card header="Title">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <div class="block-label-left">
+                                                                <label for="">Nom du poste</label>
+                                                                <input type="text" name="" class="form-control" placeholder="Entrez le nom du poste">
+                                                            </div><br>
+                                                            <div class="block-label-left">
+                                                                <label for="">Nom de l'entreprise</label>
+                                                                <input type="text" name="" class="form-control" placeholder="Entrez le nom de l'entreprise">
+                                                            </div><br>
+                                                            <div class="block-label-left">
+                                                                <label for="">Date de debut</label>
+                                                                <input type="date" name="" class="form-control" placeholder="Entrez le nom de l'entreprise">
+                                                            </div><br>
+                                                            <div class="block-label-left">
+                                                                <label for="">Date de fin</label>
+                                                                <input type="date" name="" class="form-control" placeholder="Entrez le nom de l'entreprise">
+                                                            </div><br>
+                                                            <div class="block-label-left">
+                                                                <label for="">Image (logo  site or entreprise)</label>
+                                                                <input type="file" name="" id="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-8">
+                                                            <div style="border-left:23px solid grey; height:100%;margin-left: 31px;">
+                                                                <div class="block-label-right">
+                                                                    <label for="">Liste des projets</label>
+                                                                    <textarea class="form-control" placeholder="veuillez lister vos projets " rows="3"></textarea>
+                                                                </div><br>
+                                                                <div class="block-label-right">
+                                                                    <label for="">Liste des technologies utilisées</label>
+                                                                    <textarea class="form-control" placeholder="veuillez lister vos techno " rows="3"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col" style="display: flex;justify-content: right;">
+                                                            <p-button label="Enregistrer"></p-button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </p-card>
+                                        </div>
+                                    </p-dialog>
+                                 </div>
+                            </div><br>
+                            <div class="card-body">
+                                <!-- <p-table [value]="competences" [tableStyle]="{ 'min-width': '50rem' }">
+                                    <ng-template pTemplate="header">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Nom du poste</th>
+                                            <th scope="col">Nom de l'entreprise</th>
+                                            <th scope="col">Date de début</th>
+                                            <th scope="col">Date de fin</th>
+                                            <th scope="col">Projets</th>
+                                            <th scope="col">Technologies</th>
+                                            <th scope="col">Images</th>
+                                            <th scope="col">Actions</th>
+                                        </tr>
+                                    </ng-template>
+                                    <ng-template pTemplate="body" let-competence>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>{{competence.poste}}</td>
+                                            <td>{{competence.entreprise}}</td> 
+                                            <td>{{competence.date_debut}}</td>
+                                            <td>{{competence.date_fin}}</td>
+                                            <td>{{competence.projets}}</td>
+                                            <td>{{competence.technologies}}</td>
+                                            <td><img src="{{competence.competenceImage}}" class="card-img-top" style="height:10%;width: 10%;" alt="..."></td>
+                                            <td>
+                                                <p-button icon="pi pi-pencil" [loading]=""></p-button>
+                                                <p-dialog header="Modification d'competence" [modal]="true" [style]="{ width: '80vw' }" [draggable]="false" [resizable]="false">
+                                                    <div class="card flex justify-content-center">
+                                                        <p-card header="Mod">
+                                                            <div class="container-fluid">
+                                                                <div class="row">
+                                                                    <div class="col-4">
+                                                                        <div class="block-label-left">
+                                                                            <label for="">Nom du poste</label>
+                                                                            <input type="text" name="" class="form-control" placeholder="Entrez le nom du poste">
+                                                                        </div><br>
+                                                                        <div class="block-label-left">
+                                                                            <label for="">Nom de l'entreprise</label>
+                                                                            <input type="text" name="" class="form-control" placeholder="Entrez le nom de l'entreprise">
+                                                                        </div><br>
+                                                                        <div class="block-label-left">
+                                                                            <label for="">Date de debut</label>
+                                                                            <input type="date" name="" class="form-control" placeholder="Entrez le nom de l'entreprise">
+                                                                        </div><br>
+                                                                        <div class="block-label-left">
+                                                                            <label for="">Date de fin</label>
+                                                                            <input type="date" name="" class="form-control" placeholder="Entrez le nom de l'entreprise">
+                                                                        </div><br>
+                                                                        <div class="block-label-left">
+                                                                            <label for="">Image (logo  site or entreprise)</label>
+                                                                            <input type="file" name="" id="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-8">
+                                                                        <div style="border-left:23px solid grey; height:100%;margin-left: 31px;">
+                                                                            <div class="block-label-right">
+                                                                                <label for="">Liste des projets</label>
+                                                                                <textarea class="form-control" placeholder="veuillez lister vos projets " rows="3"></textarea>
+                                                                            </div><br>
+                                                                            <div class="block-label-right">
+                                                                                <label for="">Liste des technologies utilisées</label>
+                                                                                <textarea class="form-control" placeholder="veuillez lister vos techno " rows="3"></textarea>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col" style="display: flex;justify-content: right;">
+                                                                        <p-button label="Modifier"></p-button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </p-card>
+                                                    </div>
+                                                </p-dialog>
+                                                <p-button icon="pi pi-trash"></p-button>
+                                            </td>
+                                        </tr>
+                                    </ng-template>
+                                </p-table> -->
+                            </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+</div>

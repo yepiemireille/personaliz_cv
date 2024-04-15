@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.block-form-login {
+    background-color: white;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.block-form-login .form-card {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10%;
+}
+
+.form-card-input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-card-input div{
+    width: 50%;
+}
+
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.block-form-login button{
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(14, 158, 158);
+}
+
+.block-form-login button:hover{
+    color: black;
+    background-color: white;
+}

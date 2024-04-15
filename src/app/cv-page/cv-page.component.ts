@@ -7,9 +7,16 @@ import * as Highcharts from 'highcharts';
   styleUrls: ['./cv-page.component.scss']
 })
 export class CvPageComponent implements OnInit{
+  Highcharts: typeof Highcharts = Highcharts;
+  chartOptions: Highcharts.Options = {
+    series: [{
+      data: [1, 2, 3],
+      type: 'line'
+    }]
+  };
 
   ngOnInit(): void {
-    // 
+    //  
   }
 
   

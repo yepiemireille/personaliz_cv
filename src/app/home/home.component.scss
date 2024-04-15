@@ -1,68 +1,23 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.block-title{
+.block-title {
     background-color: rgb(14, 158, 158);
     color: white;
     height: 100vh;
 }
 
-h4{
+h4 {
     font-weight: bold;
 }
 
-.block-title p{
+.block-title p {
     font-weight: bold;
     font-size: 45px;
     color: white;
     text-align: center;
     padding-top: 50%;
 }
-
-.block-form-login{
-    background-color: white;
-    text-align: center;
-    padding-top: 30%;
-}
-
-.block-form-login form{
-    margin-top: 20px;
-}
-
-form{
-    width: 80%;
-    max-width: 700px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10%;
-}
-
-input{
-    margin-bottom: 10px;
-    padding: 10px 50px;
-    margin-right: 5px;
-    border: 45%;
-}
-
-.block-form-login button{
-    margin-top: 5px;
-    padding: 10px 255px;
-    font-weight: bold;
-    color: white;
-    background-color: rgb(14, 158, 158);
-}
-
-.block-form-login button:hover{
-    color: black;
-    background-color: white;
-}
-
-.block-form-login-input{
-    display: flex;
-    border-radius: 5%;
-}
-

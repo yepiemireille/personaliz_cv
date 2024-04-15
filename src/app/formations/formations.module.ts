@@ -11,6 +11,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormationService } from '../core/http/formation.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { TableModule } from 'primeng/table';
+import { ButtonModule } from 'primeng/button';
+import { DialogModule } from 'primeng/dialog';
+import { DynamicDialogModule } from 'primeng/dynamicdialog';
+import { CardModule } from 'primeng/card';
+import { InputTextModule } from 'primeng/inputtext';
 
 
 @NgModule({
@@ -21,11 +28,17 @@ import { RouterModule } from '@angular/router';
     ListFormationComponent
   ],
   imports: [
-    // BrowserModule,
     CommonModule,
     RouterModule,
     HttpClientModule,
     FormationsRoutingModule,
+    FormsModule,
+    TableModule,
+    ButtonModule,
+    DialogModule,
+    CardModule,
+    InputTextModule,
+    DynamicDialogModule
   ],
   providers:[FormationService],
   exports:[AddFormationComponent, EditFormationComponent, ListFormationComponent]
