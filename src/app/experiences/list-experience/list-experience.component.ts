@@ -2,12 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { AddExperienceComponent } from '../add-experience/add-experience.component';
+import { Observable, interval, take, of } from 'rxjs'
+
 
 @Component({
   selector: 'app-list-experience',
   templateUrl: './list-experience.component.html',
   styleUrls: ['./list-experience.component.scss'],
-  providers: [DialogService]
+  providers: [DialogService] 
 })
 export class ListExperienceComponent implements OnInit{
 
@@ -34,9 +36,18 @@ export class ListExperienceComponent implements OnInit{
   ngOnInit():any{
     
     this.getAllListExperience()
-
+    this.test()
   }
 
+  test(){
+    const numbers = interval(1000).pipe(
+      take(5)
+    );
+  
+    numbers.subscribe(x => console.log(x));
+
+  }
+  
     addExperience() {
         this.loadingAdd = true;
 
@@ -74,8 +85,8 @@ export class ListExperienceComponent implements OnInit{
     }
 
 
-  getAllListExperience(){
-    // 
-  }
+    getAllListExperience(){
+      // 
+    }
 
 }

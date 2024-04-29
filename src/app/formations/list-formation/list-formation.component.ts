@@ -1,6 +1,7 @@
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormationService } from 'src/app/core/http/formation.service';
+import * as L from 'leaflet';
 
 @Component({
   selector: 'app-list-formation',
@@ -10,7 +11,7 @@ import { FormationService } from 'src/app/core/http/formation.service';
 export class ListFormationComponent  implements OnInit{
 
   constructor(private formationService: FormationService, public router: Router, private cdr:ChangeDetectorRef){
-    //
+    // 
   }
   listFormation:any
 

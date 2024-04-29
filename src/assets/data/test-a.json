@@ -1,0 +1,20 @@
+[
+    {
+      "author": "John Doe",
+      "title": "first article",
+      "body": "A very interesting article",
+      "published": "2017-07-09T09:16:35Z"
+    },
+    {
+      "author": "Another Author",
+      "title": "another article",
+      "body": "Lorem ipsum etc",
+      "published": "2018-08-07T14:00:00Z"
+    },
+    {
+      "author": "John Doe",
+      "title": "second article",
+      "body": "Another very interesting article",
+      "published": "2017-07-12T13:45:27Z"
+    }
+]

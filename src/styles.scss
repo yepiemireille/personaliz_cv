@@ -3,6 +3,9 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 @import "primeicons/primeicons.css";
+@import "~leaflet/dist/leaflet.css";
+
+
 
 body {
     font-family: Helvetica, Arial, sans-serif;
@@ -13,3 +16,20 @@ body {
     // background-color: #e9ecef;
 }
 
+// .leaflet-marker-icon {
+//   background-image: url(./assets/images/marker-icon.png);
+//   background-size: contain;
+// }
+
+// .leaflet-marker-icon.leaflet-zoom-animated {
+//   background-image: url(./assets/images/marker-icon-2x.png);
+// }
+
+// .leaflet-marker-shadow {
+//   background-image: url(./assets/images/marker-shadow.png);
+//   background-size: contain;
+// }
+
+// .custom-cluster-icon {
+//   font-size: 16px;
+// } 

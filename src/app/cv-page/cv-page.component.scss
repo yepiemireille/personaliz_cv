@@ -1,62 +1,138 @@
 
-.container-fluid{
-    background-color: rgb(14, 158, 158);
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
-a{
-    color: black;
+header {
+    background-color: #38c763;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header ul{
+    justify-content: end;
+}
+
+li {
+    margin-right: 10px;
+}
+
+header li{
+    color: white;
+}
+
+li input{
+    border-radius: 12px;
+}
+
+// nav {
+//     background-color: white;
+//     position: sticky;
+//     top: 0px;
+// }
+.block-menu{
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+nav li{
+    // padding: 0px 34px;
+}
+
+nav img{
+    width: 90px;
+    height: 90px;
+}
+
+a {
     text-decoration: none;
-    // color: rgb(21, 69, 69);
-    //  .block-cv-experience .block-adress
+    color: #333;
+}
+
+a:hover {
+    color: #007bff;
 }
 
 .block-img{
-    display: flex;
-    background-image: url("../../assets/images/8451.jpg");
+    // position: relative;
+    background-image: url("../../assets/images/me_4.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 30px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.block-img img{
-    width: 200px;
-}
 
-.block-img p{
-    margin: auto;
+.block-img-title{
+    background-color: white;
+    color: #38c763;
+    border-radius: 12px;
+    padding: 24px 35px;
+    text-align: center;
+    width: 350px;
     font-weight: bold;
-}
-// .block-img p::first{
-//     color: red;
-// } 
-
-.block-img-p{
-    padding-top: 65px;
-    padding-left: 25px;
+    font-size: 33px;
+    margin-top: 376px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
 
-.block-about, .block-adress{
-    padding: 30px;
-}
-
-.block-adress-location, .block-adress-email, .block-adress-number{
+.block-two{
     display: flex;
+    justify-content: center;
+    margin-top: 67px;
 }
 
-.block-about-title{
-    display: flex;
-}
-
-.blocks{
+.block-two-title{
+    background-color: rgb(61, 11, 140);
     color: white;
-    background-color: rgba(88, 213, 213, 0.57);
-    margin: 25px;
-    border-radius: 10px;
+    padding: 24px 35px;
+    text-align: center;
+    margin: 22px;
+    border-radius: 5px;
 }
 
-.block-kills h3, .block-specialities h3{
-    padding: 30px;
-    // margin: 32px;
+.block-two-title a{
+    cursor: pointer;
 }
+
+.block-three-info{
+    background-color: rgb(239, 240, 251);
+    padding: 125px 45px;
+}
+
+
+.block-three-info img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

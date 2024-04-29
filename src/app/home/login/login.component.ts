@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginService } from 'src/app/core/http/login.service';
+import { Observable, interval, take, of, map, from } from 'rxjs'
 
 @Component({
   selector: 'app-login',
@@ -22,10 +23,31 @@ export class LoginComponent implements OnInit{
   
 
   ngOnInit(): void {
+    this.getTest();
     // this.loginForm = new FormGroup({
     //   login: new FormControl('', Validators.required),
     //   password: new FormControl('', Validators.required)
     // })
+  }
+
+        public test = []
+  public articles;
+  getTest(){
+    this.loginService.getTesta().subscribe(
+      (articles )=>{
+        console.log('result articles  ====>', articles ) 
+
+        let test = articles.filter(
+          (el)=>{
+            return el.author === "John Doe"
+          }
+        )
+        console.log('result nom  ====>', test) 
+      }
+    )
+    // 
+  
+
   }
 
   onSubmit(){
@@ -40,7 +62,7 @@ export class LoginComponent implements OnInit{
         }
       )
     }else{
-      console.log('result login error')
+      console.log('result login error') 
     }
   }
 
