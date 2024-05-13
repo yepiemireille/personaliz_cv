@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CvPageComponent } from './cv-page/cv-page.component';
+import { TestAngularComponent } from './test-angular/test-angular.component';
 const routes: Routes = [
 
   {path: 'cv', component: CvPageComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   // const formations = () => import('./formations/formations.module').then(m => m.FormationsModule)},
 
   {path: 'home', component: HomeComponent},
+  {path: 'test', component: TestAngularComponent},
   {path: '', redirectTo:'home', pathMatch: 'full'},
   {path: 'not_found', component: PageNotFoundComponent},
   {path: '**', redirectTo:'not_found'}

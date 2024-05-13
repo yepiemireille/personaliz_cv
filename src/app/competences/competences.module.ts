@@ -13,6 +13,8 @@ import { CompetencesComponent } from './competences.component';
 import { ListCompetenceComponent } from './list-competence/list-competence.component';
 import { EditCompetenceComponent } from './edit-competence/edit-competence.component';
 import { AddCompetenceComponent } from './add-competence/add-competence.component';
+import { AppModule } from '../app.module';
+import { MapComponent } from '../map/map.component';
 
 
 @NgModule({

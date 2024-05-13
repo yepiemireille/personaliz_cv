@@ -1,16 +1,24 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import * as L from 'leaflet';
 import 'leaflet.markercluster';
+
+
 
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss']
 })
-export class MapComponent implements AfterViewInit{
+export class MapComponent implements OnInit, AfterViewInit{
 
   private map;
   constructor(){}
+  
+  ngOnInit(): void {
+    // 
+  }
+
+  
 
   ngAfterViewInit(): void {
     this.initMap()
@@ -36,15 +44,6 @@ export class MapComponent implements AfterViewInit{
       }
     });
 
-// ************************************* Marker personalisé ***********
-    // const marker = L.marker([51.5, -0.09]);
-    // marker.on('click', (event)=>{
-    //   console.log('', event.target.getLatLng());
-    // });
-    // marker.bindPopup('Latitude: ' + marker.getLatLng().lat + '<br>Longitude: ' + marker.getLatLng().lng);
-    // markers.addLayer(marker);
-
-    // *******************************************************************
     const addMarker = (lat, lng) => {
       const marker = L.marker([lat, lng]);
       marker.on('click', (event)=>{
@@ -67,6 +66,10 @@ export class MapComponent implements AfterViewInit{
 
     
   } 
+
+
+  // ****************************************** HeatMap ***************************
+  
   
   
 

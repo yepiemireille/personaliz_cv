@@ -21,6 +21,7 @@ import { HighchartsChartModule } from 'highcharts-angular';
 import { MarkerService } from './core/http/marker.service';
 import {LeafletModule} from '@asymmetrik/ngx-leaflet';
 import { MapComponent } from './map/map.component';
+import { TestAngularComponent } from './test-angular/test-angular.component';
 // import { LeafletMarkerClusterModule } from '@asymmetrik/ngx-leaflet-markercluster';
 
 
@@ -31,7 +32,8 @@ import { MapComponent } from './map/map.component';
     MapComponent,
     LoginComponent,
     CvPageComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    TestAngularComponent
   ],
   imports: [
     CommonModule,
