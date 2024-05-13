@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import * as L from 'leaflet';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -12,30 +13,14 @@ export class MarkerService {
 
   constructor(private http: HttpClient) { }
 
-  // gestion la logique de chargement et d'ajout de marqueurs à la carte.
-  // makeCapitalMarkers(map: L.Map) {
-  //   this.http.get(this.capitals).subscribe((res: any) => {
-  //     for (const c of res.features) {
-  //       const lon = c.geometry.coordinates[0];
-  //       const lat = c.geometry.coordinates[1];
-  //       const marker = L.marker([lat, lon]);
-        
-  //       marker.addTo(map);
-  //     }
-  //   });
-  // }
+  api_heatmap_url ="/assets/data/heatmap.json"
 
-  // makeCapitalCircleMarkers(map: L.Map): void {
-  //   this.http.get(this.capitals).subscribe((res: any) => {
-  //     for (const c of res.features) {
-  //       const lon = c.geometry.coordinates[0];
-  //       const lat = c.geometry.coordinates[1];
-  //       const circle = L.circleMarker([lat, lon]);
-        
-  //       circle.addTo(map);
-  //     }
-  //   });
-  // }
+  getDataHeatMap(): Observable<any> {
+    return this.http.get<any>(this.api_heatmap_url);
+  }
+
+
+  
   
 
 }

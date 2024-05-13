@@ -36,24 +36,22 @@ export class TestAngularComponent implements OnInit, AfterViewInit {
     }).addTo(this.map);
   }
 
-  private addHeatmapLayer(): void {
-    const heatmapData = [
-      [51.5, -0.09, 10],
-      [51.51, -0.1, 10],
-      [51.49, -0.1, 50],
-      [51.48, -0.08, 30],
-      [51.52, -0.07, 10]
-    ];
-  
+   private addHeatmapLayer(): void {
+    const heatmapData = [];
+    for (let i = 0; i < 100; i++) {
+      const lat = 51.5 + Math.random() * 0.1 - 0.05;
+      const lng = -0.09 + Math.random() * 0.1 - 0.05;
+      const intensity = Math.floor(Math.random() * 100);
+      heatmapData.push([lat, lng, intensity]);
+    }
+
     this.heatLayer = (L as any).heatLayer(heatmapData, {
-      radius: 20,
+      radius: 25,
       blur: 15,
       maxZoom: 17,
-      gradient: { 0.4: 'yellow', 0.65: 'red', 1: 'yellow' } 
+      gradient: { 0.4: 'blue', 0.65: 'lime', 1: 'red' } 
     }).addTo(this.map);
-    
-    this.heatLayer._latlngs[3].forEach((latlng) => {
-      latlng.radius = 70; // Ajustez le rayon pour que cette zone de chaleur soit plus grande
-    });
   }
+
+
 }
