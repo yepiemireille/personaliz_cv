@@ -1,10 +1,10 @@
 
-import { AfterViewInit, Component, OnInit } from '@angular/core';
 
+import { AfterViewInit, Component, OnInit } from '@angular/core'; 
+import { Observable, from, fromEvent, interval, map, of, timer } from 'rxjs';
 
 import * as L from 'leaflet';
 import 'leaflet.heat'; 
-
 
 @Component({
   selector: 'app-test-angular',
@@ -19,10 +19,13 @@ export class TestAngularComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.initMap();
     this.addHeatmapLayer();
+    this.addLegend();
+
+    this.testRxjs()
   }
 
   ngAfterViewInit(): void {
-    this.map.invalidateSize();
+    this.map.invalidateSize(); // biliothèque de leaflet pour ajuster la taille de la carte
   }
 
   private initMap(): void {
@@ -36,14 +39,14 @@ export class TestAngularComponent implements OnInit, AfterViewInit {
     }).addTo(this.map);
   }
 
-   private addHeatmapLayer(): void {
-    const heatmapData = [];
-    for (let i = 0; i < 100; i++) {
-      const lat = 51.5 + Math.random() * 0.1 - 0.05;
-      const lng = -0.09 + Math.random() * 0.1 - 0.05;
-      const intensity = Math.floor(Math.random() * 100);
-      heatmapData.push([lat, lng, intensity]);
-    }
+  private addHeatmapLayer(): void {
+    const heatmapData = [
+      [51.5, -0.09, 10],
+      [51.51, -0.1, 10],
+      [51.49, -0.1, 50],
+      [51.48, -0.08, 30],
+      [51.52, -0.07, 10]
+    ];
 
     this.heatLayer = (L as any).heatLayer(heatmapData, {
       radius: 25,
@@ -53,5 +56,47 @@ export class TestAngularComponent implements OnInit, AfterViewInit {
     }).addTo(this.map);
   }
 
+  private addLegend(): void {
+    const legend = (L as any).control({ position: 'bottomright' });
+
+    legend.onAdd = function (map) {
+      const div = L.DomUtil.create('div', 'legend');
+      const grades = [0.4, 0.65, 1];
+      const labels = ['<strong>Intensity</strong>'];
+      const colors = ['blue', 'lime', 'red'];
+
+      for (let i = 0; i < grades.length; i++) {
+        labels.push(
+          '<i style="background:' + colors[i] + '"></i> ' +
+          (grades[i] * 100) + (grades[i + 1] ? '&ndash;' + (grades[i + 1] * 100) : '+')
+        );
+      }
+
+      div.innerHTML = labels.join('<br>');
+      return div;
+    };
+
+    legend.addTo(this.map);
+  }
+
+
+
+
+
+
+
+  testRxjs(){
+    const element = document.getElementById('my-element');
+    const observable = fromEvent(element, 'click');
+
+    observable.subscribe(() => {
+      console.log('The element was clicked!');
+    });
+  }
+  
+
+
+
 
 }
+

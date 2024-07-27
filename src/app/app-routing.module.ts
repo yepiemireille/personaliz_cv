@@ -10,7 +10,6 @@ const routes: Routes = [
   {path: 'experience', loadChildren: () => import('./experiences/experiences.module').then(m => m.ExperiencesModule)},
   {path: 'competence', loadChildren: () => import('./competences/competences.module').then(m => m.CompetencesModule)},
   {path: 'formation', loadChildren: () => import('./formations/formations.module').then(m => m.FormationsModule)}, 
-  // const formations = () => import('./formations/formations.module').then(m => m.FormationsModule)},
 
   {path: 'home', component: HomeComponent},
   {path: 'test', component: TestAngularComponent},
