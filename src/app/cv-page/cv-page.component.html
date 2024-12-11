@@ -14,11 +14,16 @@
             <li><a href="">Formations</a></li>
             <li><a href="">Experiences</a></li>
             <li><a href="">Compétences</a></li>
+            <li><a href="">Projets</a></li>
+            <li><a href="">Galleries</a></li>
+            <li><a href="">Contacts</a></li>
+            <li><a routerLink="/a-propos">A propos</a></li>
         </ul>
     </nav>
     <div class="block-img">
         <div class="block-img-title">
-            <p>Mon Portfolio</p>
+            <p style="color: #38c763;font-size: 25px;">Yepie Esse Mireille - DataViz Web</p>
+            <p>Très passionnée par les Tic: le dynamisme, la réactivité, le respect, l'inovation et la discipline me caraterise</p>
         </div>
     </div>
 
@@ -30,9 +35,52 @@
                     <div class="block-two-title"><a (click)="showDialogFormation()">Formation</a></div>
                         <p-dialog header="Formation" [(visible)]="visibleFormation" [modal]="true" [style]="{ width: '80vw' }" [draggable]="false" [resizable]="false">
                             <p class="m-0">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                            </p><br><br>
+                            <div class="row">
+                                <div class="col-6 d-flex">
+                                    <div style="margin-top: -8px;">
+                                        <img src="../../assets/images/aucun.png" alt="LM3G" style="width: 100px;height: auto;">
+                                    </div>
+                                    <div>
+                                        <p style="font-weight: bold;">Lycée Moderne 3 de Gagnoa</p>
+                                        <p>Baccalauréat Série C</p>
+                                        <p>2016</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 d-flex">
+                                    <div style="margin-top: -8px;">
+                                        <img src="../../assets/images/uvci.png" alt="uvci" style="width: 100px;height: auto;">
+                                    </div>
+                                    <div>
+                                        <p style="font-weight: bold;">Université Virtuelle de Côte d'Ivoire (UVCI)</p>
+                                        <p>Licence en Developpement d'Application Web et E-Service (DAS)</p>
+                                        <p>2017-2019</p>
+                                    </div>
+                                </div>
+                            </div><br>
+                            <div class="row">
+                                <div class="col-6 d-flex">
+                                    <div style="margin-top: -4px;">
+                                        <img src="../../assets/images/simplons.png" alt="simplon" style="width: 80px;height: auto;">
+                                    </div>
+                                    <div>
+                                        <p style="font-weight: bold;">Simplon Côte d'Ivoire</p>
+                                        <p>Formation en développeurs d'applications Web et Mobile</p>
+                                        <p>2020 - 2021</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 d-flex">
+                                    <div style="margin-top: -8px;">
+                                        <img src="../../assets/images/uvci.png" alt="uvci" style="width: 100px;height: auto;">
+                                    </div>
+                                    <div>
+                                        <p style="font-weight: bold;">Université Virtuelle de Côte d'Ivoire (UVCI)</p>
+                                        <p>Master en Big Data Analytic (BDA)</p>
+                                        <p>2019-2021</p>
+                                    </div>
+                                </div>
+                            </div>
                         </p-dialog>
                     <div class="block-two-title"><a (click)="showDialogExperience()">Experience</a></div>
                         <p-dialog header="Experience" [(visible)]="visibleExperience" [modal]="true" [style]="{ width: '80vw' }" [draggable]="false" [resizable]="false">
@@ -63,121 +111,71 @@
         </div>
         <div class="col-3"></div>
     </div>
-    <div class="row block-three-info">
-        <div class="col-6">
-            <div>
-                <img src="../../assets/images/me_5.jpg" width="450px" alt="" srcset="">
-            </div>
+    <!-- ************************ style="width: 145px;height: auto;"**************** -->
+    <section class="about-section">
+        <div class="about-image">
+          <img src="../../assets/images/me_1.jpg" alt="Yepie Esse Mireille au travail">
         </div>
-        <div class="col-6">
-            <div>
-                <p>
-                    Se former est primordial pour une personne qui vise à aller loin.
-                    Avec Simplon c'est apprendre sauto former, faire des recherche et la suite de la formation obtenir
-                    un emplois pour gagner expériences.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div>
-        <!-- <app-map></app-map> -->
-    </div>
-    <footer style="padding: 74px 62px;">
-        <div>Contactez-nous au 01 22 00 80 11</div>
-    </footer>
-    
-
-
-
-
-    <!-- <div class="row">
-        <div class="col-6">
-            <section class="blocks">
-                <div class="block-img">
+        <div class="about-content pt-5">
+          <h1>À propos de moi</h1>
+          <p>
+            Je m'appelle Yepie Esse Mireille, une consultante spécialisée en DataViz Web avec une passion pour les technologies et le développement de solutions innovantes. 
+            Dynamique, réactive et axée sur les résultats, je m'efforce de donner le meilleur de moi-même dans chaque projet que j'entreprends.
+          </p>
+          <p>
+            Mon objectif est d'aider les entreprises à mieux comprendre et utiliser leurs données grâce à des visualisations efficaces et intuitives. Je crois fermement que 
+            les données bien présentées permettent des prises de décision plus éclairées et contribuent à l'efficacité de toute équipe.
+          </p>
+          <p>
+            Mes valeurs incluent le respect, l'innovation et la discipline. J'adore travailler en équipe et partager mes compétences avec d'autres pour atteindre des objectifs communs. 
+            Que ce soit dans le cadre de projets professionnels ou personnels, je suis toujours prête à relever de nouveaux défis et à apprendre en continu.
+          </p>
+        </div><br>
+      </section>
+    <section class="gallery-section">
+        <div style="text-align: center;font-weight: bold;font-size: 34px;color: rgb(97, 25, 185);">Prix & Diplômes</div>
+        <div class="row">
+            <div class="col-4">
+                <div class="gallery-section-card">
+                    <div class="gallery-section-card-first"></div>
                     <div>
-                        <img class="rounded-circle" src="../../assets/images/IMG_20231130_063124.jpg" alt="mireille">
-                    </div>
-                    <div class="block-img-p">
-                        <p style="color: red;font-size: 35px;">Esse Mireille Yepie</p>
-                        <p>Developpeuse Web</p>
-                    </div>
-                </div>
-                <div class="block-about">
-                    <div class="block-about-title">
-                        <div>
-                            <img src="../../assets/images/icons8-utilisateur-48.png" alt="user" width="30px">
-                        </div>
-                        <div>
-                            <h3>About Me</h3>
-                        </div>
-                    </div>
+                        
+                        <p style="text-align: center;color: #38c763;font-weight: bold;">1er Prix Hackaton Simplon</p>
                     
-                    <p>
-                        Très passionnée par les TIC, je serai honorée de faire partie de votre 
-                        dynamique équipe pour relever plus de défis.
-                    </p>
-                </div>
-                <div class="block-adress">
-                    <div class="block-adress-location">
-                        <div>
-                            <img src="../../assets/images/icons8-gps-50.png" width="25px" alt="call">
-                        </div>
-                        <div>
-                            <p>07 BP 6754 Abidjan 07 II Plateaux Abidjan Côte d'Ivoire</p>
-                        </div>
-                    </div>
-                    <div class="block-adress-email">
-                        <div>
-                            <img src="../../assets/images/icons8-nouveau-message-50.png" width="25px" alt="call">
-                        </div>
-                        <div>
-                            <p>essemireilleyepie@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="block-adress-number">
-                        <div>
-                            <img src="../../assets/images/icons8-appel-48.png" width="25px" alt="call">
-                        </div>
-                        <div>
-                            <p>0789444110</p>
-                        </div>
+                        <p>Avec Simplon j'ai apprie à faire des recherches.
+                            Mon equipe et moi avont remporté le premier prix hackaton
+                        </p>
+                        <p>Voir la suite</p>
                     </div>
                 </div>
-            </section>
-        </div>
-        <div class="col-6">
-            <section class="blocks">
-                <div class="block-kills">
-                    <h3>Software Skills</h3> 
-                </div>
-            </section>
-            <section class="blocks">
-                <div class="block-specialities">
-                    <h3>Specialities</h3>
+            </div>
+            <div class="col-4">
+                <div class="gallery-section-card">
+                    <div class="gallery-section-card-second"></div>
                     <div>
-                        <highcharts-chart 
-                        [Highcharts]="Highcharts"
-                        [options]="chartOptions"
-                      
-                        style="width: 80%; height: 400px; display: block; padding: 22px 83px;"
-                      ></highcharts-chart> 
+                        <p style="text-align: center;color: #38c763;font-weight: bold;">Simplon: Diplome de fin de formation</p>
+                        <p>Avec Simplon j'ai apprie à faire des recherches.
+                            Mon equipe et moi avont remporté le premier prix hackaton
+                        </p>
+                        <p>Voir la suite</p>
                     </div>
                 </div>
-            </section>
-        </div>
-    </div> -->
-    <!-- <div class="row">
-        <div class="col-12">
-            <section class="blocks">
-                <div class="block-cv-experience">
-                    <h2>Characteristics</h2>
+            </div>
+            <div class="col-4">
+                <div class="gallery-section-card">
+                    <div class="gallery-section-card-thirst"></div>
+                    <div>
+                        <p style="text-align: center;color: #38c763;font-weight: bold;">Diplome de fin de stage : Orange</p>
+                        <p>Avec Simplon j'ai apprie à faire des recherches.
+                            Mon equipe et moi avont remporté le premier prix hackaton
+                        </p>
+                        <p>Voir la suite</p>
+                    </div>
                 </div>
-                <div>
-                    <app-map></app-map>
-                </div>
-            </section>
+            </div>
         </div>
-    </div> -->
-</div>
-
-  
+    </section>
+    <footer>
+        <p>contact : 07 89 44 41 10</p>
+        <p>email : essemireilleyepie@gmail.com</p>
+    </footer>

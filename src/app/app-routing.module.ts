@@ -4,9 +4,11 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CvPageComponent } from './cv-page/cv-page.component';
 import { TestAngularComponent } from './test-angular/test-angular.component';
+import { AProposComponent } from './a-propos/a-propos.component';
 const routes: Routes = [
 
   {path: 'cv', component: CvPageComponent},
+  {path: 'a-propos', component: AProposComponent},
   {path: 'experience', loadChildren: () => import('./experiences/experiences.module').then(m => m.ExperiencesModule)},
   {path: 'competence', loadChildren: () => import('./competences/competences.module').then(m => m.CompetencesModule)},
   {path: 'formation', loadChildren: () => import('./formations/formations.module').then(m => m.FormationsModule)}, 

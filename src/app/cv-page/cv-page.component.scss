@@ -69,7 +69,7 @@ a:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,14 +78,14 @@ a:hover {
 
 .block-img-title{
     background-color: white;
-    color: #38c763;
+    color: black;
     border-radius: 12px;
-    padding: 24px 35px;
+    padding: 24px 25px;
     text-align: center;
-    width: 350px;
+    width: 550px;
     font-weight: bold;
-    font-size: 33px;
-    margin-top: 376px;
+    font-size: 13px;
+    margin-top: 480px;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
 
@@ -118,6 +118,81 @@ a:hover {
     max-width: 100%;
     height: auto;
 }
+
+
+/* Section À propos */
+.about-section {
+    text-align: center;
+    color: #333;
+    display: flex;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 2px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-content h1 {
+    color: #4CAF50;
+    font-size: 2em;
+  }
+  
+  .about-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+    .gallery-section{
+        background-color: white;
+        margin: 50px;
+    }
+    .gallery-section-card{
+        margin: 30px;
+        background-color: aliceblue;
+    }
+
+    .gallery-section-card-first{//photo_4_2024-12-10_17-30-26  photo_9_2024-12-10_17-30-26  photo_14_2024-12-10_17-30-26.jpg
+        background-image: url("../../assets/images/photo_4_2024-12-10_17-30-26.jpg");
+        background-position: center;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gallery-section-card-second{
+        background-image: url("../../assets/images/photo_3_2024-12-10_17-30-26.jpg");
+        background-position: center;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gallery-section-card-thirst{
+        background-image: url("../../assets/images/photo_7_2024-12-10_17-30-26.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 
 
